@@ -11,11 +11,13 @@ function App() {
   let fooditems = ["dal", "khana", "Green Vegetable"];
 
   return (
+    <>
     <Container>
       <h1 className="food-heading">Healthy Food</h1>
       <ErrorMessage items={fooditems}></ErrorMessage>
       <FoodItems items={fooditems}></FoodItems>
     </Container>
+    </>
   );
 }
 

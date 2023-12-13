@@ -7,3 +7,8 @@ we can make any number of containers and it will render the container content in
 why to use this ?
 
 in facebook or instagram we have made many cards that are inside a container and we have to post differnt kinds of data without changing the layout. so to reuse this layout we can create a container and pass that new data inside this container and properties (css) will be applied as it is.
+
+completed {Passing Components as Children, Handling Events, Passing Functions via Props}
+
+iss point tak saare components stateless hai
+go to app.js and check the value of textToChange...

@@ -11,12 +11,19 @@ function App() {
 
   let fooditems = ["dal", "khana", "Green Vegetable"];
 
+  let textToShow = "Food item entered by user"
+  const handleOnChange = (event) => {
+    console.log(event.target.value);
+    textToShow = event.target.value;
+  };
+
   return (
     <>
     <Container>
       <h1 className="food-heading">Healthy Food</h1>
       <ErrorMessage items={fooditems}></ErrorMessage>
-      <FoodInput></FoodInput>
+      <FoodInput handleOnChange={handleOnChange}></FoodInput>
+      <p>{textToShow}</p>
       <FoodItems items={fooditems}></FoodItems>
     </Container>
     </>

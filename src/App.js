@@ -4,6 +4,7 @@ import "./App.css";
 import FoodItems from "./components/FoodItems";
 import ErrorMessage from "./components/ErrorMessage";
 import Container from "./components/Container";
+import FoodInput from "./components/FoodInput";
 
 function App() {
   // Parent - fooditems yahi define hoga === props (parent to child) one way data passing
@@ -15,6 +16,7 @@ function App() {
     <Container>
       <h1 className="food-heading">Healthy Food</h1>
       <ErrorMessage items={fooditems}></ErrorMessage>
+      <FoodInput></FoodInput>
       <FoodItems items={fooditems}></FoodItems>
     </Container>
     </>

@@ -21,7 +21,7 @@ const Item = ({ fooditem }) => {
         className={`${styles.button} btn btn-info`}
         //onClick={() => console.log(`item ${fooditem}  being bought`)} //onClick button yaha pr hamne button ko uske food se map kr diya hai hai. 
         // second way
-        onClick={(event) => handleBuyButtonClicked(event)}
+        onClick={(event) => handleBuyButtonClicked(event)} // Event Handler as arrow functions
       >
         Buy
       </button>
